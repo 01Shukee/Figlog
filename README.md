@@ -1,16 +1,32 @@
-# React + Vite
+# Figlog: The Artisan’s Contribution Canvas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Link to Live Demo] | [Link to Figma Design]
 
-Currently, two official plugins are available:
+**Figlog** is a high-fidelity contribution tracking platform designed for creative engineers. It moves beyond static commit logs to visualize creative output as a persistent, data-driven architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Tech Stack
+Built for performance and precision using:
+* **Frontend**: React, Next.js (App Router)
+* **Styling**: Tailwind CSS
+* **State Management**: React Context API
+* **Components**: Lucide React, Framer Motion (or your animation lib)
 
-## React Compiler
+## 📐 The Architecture
+This project focuses on **three-tier hierarchy management**:
+1. **File Level**: Isolate logic to specific system files (`core_render.sys`).
+2. **Frame Level**: Granular control over UI/UX module groupings.
+3. **Version Level**: Immutable historical tracking for every iteration.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 👁 Visuals
+*(Insert 2-3 high-quality screenshots here—e.g., your Dashboard heatmap and the Version History sidebar)*
 
-## Expanding the ESLint configuration
+## 💡 Philosophy
+"Do Hard Things." Figlog is built on the belief that meaningful creative output requires structured constraints and rigorous data tracking. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+1. Clone the repo: `git clone https://github.com/your-username/figlog.git`
+2. Install dependencies: `npm install`
+3. Run locally: `npm run dev`
+
+---
+*Built with intent by [Your Name].*
