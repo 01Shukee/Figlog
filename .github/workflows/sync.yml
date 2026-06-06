@@ -2,9 +2,7 @@ name: Sync Figma Data
 
 on:
   schedule:
-    # Runs at 00:00 UTC every day
     - cron: '0 0 * * *'
-  # Allows you to trigger it manually from the "Actions" tab in GitHub
   workflow_dispatch:
 
 jobs:
@@ -19,12 +17,13 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install connector dependencies
+        run: npm install @supabase/supabase-js node-fetch
+        working-directory: .
 
       - name: Run Sync Script
         env:
           VITE_FIGMA_TOKEN: ${{ secrets.VITE_FIGMA_TOKEN }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: node connector.js
+        run: node connector.mjs
