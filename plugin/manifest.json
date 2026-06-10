@@ -9,6 +9,11 @@
   "networkAccess": {
     "allowedDomains": [
       "https://*.supabase.co"
-    ]
+    ],
+    "devAllowedDomains": [
+      "http://localhost:5173",
+      "https://localhost:5173"
+    ],
+    "reasoning": "Figlog requires Supabase for user authentication and data persistence. Localhost is used during development only."
   }
 }
